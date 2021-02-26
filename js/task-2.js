@@ -13,10 +13,10 @@ const createIngredient = ingredient =>{
  const ingredientRef = document.createElement('li');
  ingredientRef.textContent = ingredient;
 
-return ingredientRef; }
+return ingredientRef;
+}
 
-const ingredientsList = ingredients.map(
-ingredient=>createIngredient(ingredient));
+const ingredientsList = ingredients.map(ingredient=>createIngredient(ingredient));
 
 ingredientsListRef.append(...ingredientsList);
 

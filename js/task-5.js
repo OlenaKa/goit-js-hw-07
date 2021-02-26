@@ -1,6 +1,17 @@
 const inputRef = document.querySelector('#name-input');
 const outputRef = document.querySelector('#name-output');
+const defaultValue = outputRef.textContent;
+
+console.log(defaultValue)
 
 inputRef.addEventListener('input', e=>{
-outputRef.textContent = e.target.value});
+if (e.target.value.length === 0){
+  console.log(defaultValue)
+  outputRef.textContent=defaultValue;
+} else {
+  outputRef.textContent = e.target.value
+}
+}
+
+)
 

@@ -11,6 +11,7 @@ const createGalleryElement = (imageSource)=> {
 
   imageRef.classList.add('img-align')
 
+  
   return imageRef; 
 }
 

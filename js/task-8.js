@@ -9,7 +9,7 @@ btnRenderRef.addEventListener('click', e=>createBoxes(inputRef.value));
 btnDestroyRef.addEventListener('click',e=>destroyBoxes());
 
 function createBoxes(amount) {
-  boxesRef.innerHTML = '';
+  
 
  for (let i=1; i<=amount; i+=1){
   const boxRef = document.createElement('div');
