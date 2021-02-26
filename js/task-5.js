@@ -4,13 +4,7 @@ const defaultValue = outputRef.textContent;
 
 
 inputRef.addEventListener('input', e=>{
-if (e.target.value.length === 0){
-  
-  outputRef.textContent=defaultValue;
-} else {
-  outputRef.textContent = e.target.value
+e.target.value.length === 0 ? outputRef.textContent=defaultValue: outputRef.textContent = e.target.value
 }
-}
-
 )
 
